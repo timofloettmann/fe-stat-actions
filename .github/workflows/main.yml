@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  # Trigger the workflow on pull request to master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  stats-master:
+    runs-on: ubuntu-latest
+    steps:
+      ## checkout master and generate stats file
+    - uses: actions/checkout@v2
+      with: 
+        ref: 'master'
+    - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+    - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build # will run `yarn build` command
+    - uses: actions/upload-artifact@v1
+        with:
+            name: 'stats-master.json'
+            path: '_build/stats.json'
+
+  stats-pr:
+    runs-on: ubuntu-latest
+    steps:
+      ## checkout the PR and generate stats file
+    - uses: actions/checkout@v2
+    - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+    - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build # will run `yarn build` command
+    - uses: actions/upload-artifact@v1
+        with:
+            name: 'stats-pr.json'
+            path: '_build/stats.json'
+
+      
