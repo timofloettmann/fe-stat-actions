@@ -23,7 +23,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: "stats-master.json"
-          path: "_build/stats.json"
+          path: "dist/stats.json"
 
   stats-pr:
     runs-on: ubuntu-latest
@@ -39,4 +39,4 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: "stats-pr.json"
-          path: "_build/stats.json"
+          path: "dist/stats.json"
