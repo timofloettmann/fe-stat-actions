@@ -11,34 +11,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       ## checkout master and generate stats file
-    - uses: actions/checkout@v2
-      with: 
-        ref: 'master'
-    - uses: borales/actions-yarn@v2.0.0
+      - uses: actions/checkout@v2
+        with:
+          ref: "master"
+      - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
-    - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: build # will run `yarn build` command
-    - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v1
         with:
-            name: 'stats-master.json'
-            path: '_build/stats.json'
+          name: "stats-master.json"
+          path: "_build/stats.json"
 
   stats-pr:
     runs-on: ubuntu-latest
     steps:
       ## checkout the PR and generate stats file
-    - uses: actions/checkout@v2
-    - uses: borales/actions-yarn@v2.0.0
+      - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
-    - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: build # will run `yarn build` command
-    - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v1
         with:
-            name: 'stats-pr.json'
-            path: '_build/stats.json'
-
-      
+          name: "stats-pr.json"
+          path: "_build/stats.json"
