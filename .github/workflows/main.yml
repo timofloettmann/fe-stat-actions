@@ -22,7 +22,7 @@ jobs:
           cmd: build # will run `yarn build` command
       - uses: actions/upload-artifact@v1
         with:
-          name: "stats-master.json"
+          name: "stats-master"
           path: "dist/stats.json"
 
   stats-pr:
@@ -38,5 +38,24 @@ jobs:
           cmd: build # will run `yarn build` command
       - uses: actions/upload-artifact@v1
         with:
-          name: "stats-pr.json"
+          name: "stats-pr"
           path: "dist/stats.json"
+
+  compare-stats:
+    runs-on: ubuntu-latest
+    needs: [stats-master, stats-pr]
+    steps:
+      - uses: actions/download-artifact@v1
+        with:
+          name: "stats-pr"
+          path: "stats-pr"
+      - uses: actions/download-artifact@v1
+        with:
+          name: "stats-master"
+          path: "stats-master"
+      - run: npx timofloettmann/webpack-stats-diff --markdown --threshold=0 ./stats-master/stats.json ./stats-pr/stats.json > diff.txt
+      - name: "Comment on PR"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl --fail --verbose -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: token ${GITHUB_TOKEN}" --data "$(jq --null-input --arg escaped_diff "$(cat diff.txt)" '{body: $escaped_diff}')" $(cat $GITHUB_EVENT_PATH | jq --raw-output '.pull_request.comments_url')
