@@ -7,53 +7,62 @@ on:
       - master
 
 jobs:
-  stats-master:
+  ## checkout master and generate stats file
+  build-master:
     runs-on: ubuntu-latest
     steps:
-      ## checkout master and generate stats file
       - uses: actions/checkout@v2
         with:
           ref: "master"
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: install # will run `yarn install` command
+          cmd: install
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: build # will run `yarn build` command
+          cmd: build
       - uses: actions/upload-artifact@v1
         with:
-          name: "stats-master"
-          path: "dist/stats.json"
+          name: "build-master"
+          path: "dist"
 
-  stats-pr:
+  build-pr:
+    ## checkout the PR and generate stats file
     runs-on: ubuntu-latest
     steps:
-      ## checkout the PR and generate stats file
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: install # will run `yarn install` command
+          cmd: install
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: build # will run `yarn build` command
+          cmd: build
       - uses: actions/upload-artifact@v1
         with:
-          name: "stats-pr"
-          path: "dist/stats.json"
+          name: "build-pr"
+          path: "dist"
 
   compare-stats:
     runs-on: ubuntu-latest
-    needs: [stats-master, stats-pr]
+    needs: [build-master, build-pr]
     steps:
+      - uses: actions/checkout@v2 # code has to be checked out in order to run the local action under ./.github/actions
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
       - uses: actions/download-artifact@v1
         with:
-          name: "stats-pr"
-          path: "stats-pr"
+          name: "build-pr"
+          path: "build-pr"
       - uses: actions/download-artifact@v1
         with:
-          name: "stats-master"
-          path: "stats-master"
-      - run: npx timofloettmann/webpack-stats-diff --markdown --threshold=0 ./stats-master/stats.json ./stats-pr/stats.json > diff.txt
+          name: "build-master"
+          path: "build-master"
+      - name: "Compare Stats"
+        uses: ./.github/actions/compare-stats
+        with:
+          oldStatsFile: ./build-master/stats.json
+          newStatsFile: ./build-pr/stats.json
+          diffOutputFile: ./diff.txt
       - name: "Comment on PR"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

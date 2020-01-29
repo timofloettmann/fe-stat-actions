@@ -1,5 +1,6 @@
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -32,6 +33,24 @@ module.exports = {
       statsOptions: { source: false, reasons: false },
       // Log level. Can be 'info', 'warn', 'error' or 'silent'.
       logLevel: "silent"
+    }),
+
+    // CompressionPlugin generates pre-gzipped chunk files,
+    // the build folder will contain a .js and a .js.gz file
+    // for each chunk that can be compressed with a ratio of at least 0.8
+    new CompressionPlugin({
+      algorithm: "gzip",
+      test: /\.js$|\.css$|\.html$|\.svg$|\.json$/,
+      threshold: 10240,
+      minRatio: 0.8
+    }),
+
+    new CompressionPlugin({
+      filename: '[path].br[query]',
+      algorithm: "brotliCompress",
+      test: /\.js$|\.css$|\.html$|\.svg$|\.json$/,
+      threshold: 10240,
+      minRatio: 0.8
     })
   ]
 };
