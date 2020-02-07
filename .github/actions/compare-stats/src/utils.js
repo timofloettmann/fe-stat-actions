@@ -64,6 +64,20 @@ const filterByExtension = (statAssets, config) => {
   );
 };
 
+const filterUnchanged = mergedAssets => {
+  return Object.entries(mergedAssets).reduce((acc, [name, stats]) => {
+    const hasDiff =
+      Object.values(stats).filter(x => ![undefined, 0].includes(x.diff))
+        .length > 0;
+
+    if (!hasDiff) {
+      return acc;
+    }
+
+    return { ...acc, [name]: stats };
+  }, {});
+};
+
 const getStatsDiff = (
   oldAssetStats = requiredParam("oldAssetStats"),
   newAssetStats = requiredParam("newAssetStats"),
@@ -98,6 +112,12 @@ const getStatsDiff = (
     },
     {}
   );
+
+  console.log(config);
+
+  if (config.hideUnchanged) {
+    return filterUnchanged(merged);
+  }
 
   return merged;
 };

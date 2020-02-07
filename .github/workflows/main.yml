@@ -60,6 +60,7 @@ jobs:
       - name: "Compare Stats"
         uses: ./.github/actions/compare-stats
         with:
+          hideUnchanged: true
           oldStatsFile: ./build-master/stats.json
           newStatsFile: ./build-pr/stats.json
           diffOutputFile: ./diff.txt

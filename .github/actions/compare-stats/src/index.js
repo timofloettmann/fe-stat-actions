@@ -23,8 +23,10 @@ async function main() {
   }
 
   const diffOutputFile = core.getInput("diffOutputFile") || "diff.txt";
-
+  const hideUnchanged = core.getInput("hideUnchanged");
   const config = {
+    // even if it's configured as boolean in the yml, it seems to be passed in as string
+    hideUnchanged: hideUnchanged === "true" ? true : false,
     extensions: (core.getInput("extensions") || "js").split(","),
     compressions: (core.getInput("compressions") || "gz,br").split(",")
   };
@@ -41,8 +43,8 @@ async function main() {
   const statsDiff = getStatsDiff(oldAssets, newAssets, config);
   const formatted = formatStatsDiff(statsDiff);
 
-  const resultsPath = path.join(process.cwd(), diffOutputFile)
-  const resultDir = path.dirname(resultsPath)
+  const resultsPath = path.join(process.cwd(), diffOutputFile);
+  const resultDir = path.dirname(resultsPath);
 
   await ensureDir(resultDir);
   await writeFile(resultsPath, formatted);
