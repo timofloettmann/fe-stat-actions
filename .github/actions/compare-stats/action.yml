@@ -1,0 +1,15 @@
+name: "Webpack Stats Comparison"
+description: "Compare Webpack Bundle statistics across builds"
+inputs:
+  oldStatsFile:
+    description: "Old Stats File"
+  newStatsFile:
+    description: "New Stats File"
+  diffOutput:
+      description: "Diff output file"
+runs:
+  using: "node12"
+  main: "src/index.js"
+branding:
+  icon: "box"
+  color: "blue"

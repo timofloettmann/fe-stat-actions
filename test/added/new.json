@@ -1,0 +1,1056 @@
+{
+  "errors": [
+  ],
+  "warnings": [
+  ],
+  "version": "4.32.2",
+  "hash": "403aa208c9f32dece78f",
+  "time": 3941,
+  "builtAt": 1580031669813,
+  "publicPath": "",
+  "outputPath": "/Users/timo/dev/fe-stat-actions/dist",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "1.main.js",
+      "size": 192,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    },
+    {
+      "name": "main.js",
+      "size": 132060,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "main.js.br",
+      "size": 36551,
+      "chunks": [
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    },
+    {
+      "name": "main.js.gz",
+      "size": 41806,
+      "chunks": [
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {
+      },
+      "childAssets": {
+      }
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {
+      },
+      "childAssets": {
+      }
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 135060,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "2cd171c8877174db9501",
+      "siblings": [
+      ],
+      "parents": [
+      ],
+      "children": [
+        1
+      ],
+      "childrenByOrder": {
+      },
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+          "name": "./node_modules/react/index.js",
+          "index": 1,
+          "index2": 2,
+          "size": 190,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/object-assign/index.js",
+          "name": "./node_modules/object-assign/index.js",
+          "index": 3,
+          "index2": 0,
+          "size": 2108,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react/cjs/react.production.min.js",
+          "issuerId": 3,
+          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 0,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+              "name": "./node_modules/react/index.js"
+            },
+            {
+              "id": 3,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/cjs/react.production.min.js",
+              "name": "./node_modules/react/cjs/react.production.min.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+          "name": "./node_modules/react-dom/index.js",
+          "index": 4,
+          "index2": 6,
+          "size": 1363,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": [
+            "render"
+          ],
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        },
+        {
+          "id": 3,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/cjs/react.production.min.js",
+          "name": "./node_modules/react/cjs/react.production.min.js",
+          "index": 2,
+          "index2": 1,
+          "size": 6645,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+          "issuerId": 0,
+          "issuerName": "./node_modules/react/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 0,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+              "name": "./node_modules/react/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        },
+        {
+          "id": 4,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+          "index": 5,
+          "index2": 5,
+          "size": 119155,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+          "issuerId": 2,
+          "issuerName": "./node_modules/react-dom/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+              "name": "./node_modules/react-dom/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        },
+        {
+          "id": 5,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/index.js",
+          "name": "./node_modules/scheduler/index.js",
+          "index": 6,
+          "index2": 4,
+          "size": 198,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": 4,
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+              "name": "./node_modules/react-dom/index.js"
+            },
+            {
+              "id": 4,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+              "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3
+        },
+        {
+          "id": 6,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/cjs/scheduler.production.min.js",
+          "name": "./node_modules/scheduler/cjs/scheduler.production.min.js",
+          "index": 7,
+          "index2": 3,
+          "size": 5109,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/index.js",
+          "issuerId": 5,
+          "issuerName": "./node_modules/scheduler/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+              "name": "./node_modules/react-dom/index.js"
+            },
+            {
+              "id": 4,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+              "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+            },
+            {
+              "id": 5,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/index.js",
+              "name": "./node_modules/scheduler/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 4
+        },
+        {
+          "id": 7,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js 6c60ebe7f9995bee4f194dac88e103f7",
+          "name": "./src/index.js + 1 modules",
+          "index": 0,
+          "index2": 8,
+          "size": 292,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": [
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Cannot concat with ./node_modules/react-dom/index.js (<- Module is not an ECMAScript module)",
+            "ModuleConcatenation bailout: Cannot concat with ./node_modules/react/index.js (<- Module is not an ECMAScript module)"
+          ],
+          "depth": 0,
+          "modules": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js",
+              "index": 0,
+              "index2": 8,
+              "size": 180,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "usedExports": true,
+              "providedExports": [
+              ],
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is an entry point"
+              ],
+              "depth": 0
+            },
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+              "name": "./src/HelloWorld/index.js",
+              "index": 8,
+              "index2": 7,
+              "size": 102,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+              ],
+              "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "issuerId": null,
+              "issuerName": "./src/index.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+                  "name": "./src/index.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "usedExports": [
+                "default"
+              ],
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [
+              ],
+              "depth": 1
+            }
+          ],
+          "filteredModules": 0
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/index",
+          "reasons": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 157,
+      "names": [
+      ],
+      "files": [
+        "1.main.js"
+      ],
+      "hash": "f0fbc35245a5d66c94bb",
+      "siblings": [
+      ],
+      "parents": [
+        0
+      ],
+      "children": [
+      ],
+      "childrenByOrder": {
+      },
+      "modules": [
+        {
+          "id": 8,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/Component.js",
+          "name": "./src/HelloWorld/Component.js",
+          "index": 9,
+          "index2": 9,
+          "size": 157,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+          "issuerId": null,
+          "issuerName": "./src/HelloWorld/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            },
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+              "name": "./src/HelloWorld/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/HelloWorld/index.js (referenced with import())"
+          ],
+          "depth": 2
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": null,
+          "module": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+          "moduleIdentifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+          "moduleName": "./src/HelloWorld/index.js",
+          "loc": "3:9-30",
+          "request": "./Component",
+          "reasons": [
+          ]
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+      "name": "./node_modules/react/index.js",
+      "index": 1,
+      "index2": 2,
+      "size": 190,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+      "issuerId": null,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/object-assign/index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "index": 3,
+      "index2": 0,
+      "size": 2108,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react/cjs/react.production.min.js",
+      "issuerId": 3,
+      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 0,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+          "name": "./node_modules/react/index.js"
+        },
+        {
+          "id": 3,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/cjs/react.production.min.js",
+          "name": "./node_modules/react/cjs/react.production.min.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "index": 4,
+      "index2": 6,
+      "size": 1363,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+      "issuerId": null,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": [
+        "render"
+      ],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 3,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/cjs/react.production.min.js",
+      "name": "./node_modules/react/cjs/react.production.min.js",
+      "index": 2,
+      "index2": 1,
+      "size": 6645,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+      "issuerId": 0,
+      "issuerName": "./node_modules/react/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 0,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react/index.js",
+          "name": "./node_modules/react/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 4,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "index": 5,
+      "index2": 5,
+      "size": 119155,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+      "issuerId": 2,
+      "issuerName": "./node_modules/react-dom/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+          "name": "./node_modules/react-dom/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 5,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/index.js",
+      "name": "./node_modules/scheduler/index.js",
+      "index": 6,
+      "index2": 4,
+      "size": 198,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": 4,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+          "name": "./node_modules/react-dom/index.js"
+        },
+        {
+          "id": 4,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3
+    },
+    {
+      "id": 6,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/cjs/scheduler.production.min.js",
+      "name": "./node_modules/scheduler/cjs/scheduler.production.min.js",
+      "index": 7,
+      "index2": 3,
+      "size": 5109,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/index.js",
+      "issuerId": 5,
+      "issuerName": "./node_modules/scheduler/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/index.js",
+          "name": "./node_modules/react-dom/index.js"
+        },
+        {
+          "id": 4,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+        },
+        {
+          "id": 5,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/scheduler/index.js",
+          "name": "./node_modules/scheduler/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 4
+    },
+    {
+      "id": 7,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js 6c60ebe7f9995bee4f194dac88e103f7",
+      "name": "./src/index.js + 1 modules",
+      "index": 0,
+      "index2": 8,
+      "size": 292,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": [
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Cannot concat with ./node_modules/react-dom/index.js (<- Module is not an ECMAScript module)",
+        "ModuleConcatenation bailout: Cannot concat with ./node_modules/react/index.js (<- Module is not an ECMAScript module)"
+      ],
+      "depth": 0,
+      "modules": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 8,
+          "size": 180,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": true,
+          "providedExports": [
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0
+        },
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+          "name": "./src/HelloWorld/index.js",
+          "index": 8,
+          "index2": 7,
+          "size": 102,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+          ],
+          "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+              "name": "./src/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+          ],
+          "depth": 1
+        }
+      ],
+      "filteredModules": 0
+    },
+    {
+      "id": 8,
+      "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/Component.js",
+      "name": "./src/HelloWorld/Component.js",
+      "index": 9,
+      "index2": 9,
+      "size": 157,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+      "issuerId": null,
+      "issuerName": "./src/HelloWorld/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/index.js",
+          "name": "./src/index.js"
+        },
+        {
+          "id": null,
+          "identifier": "/Users/timo/dev/fe-stat-actions/node_modules/babel-loader/lib/index.js!/Users/timo/dev/fe-stat-actions/src/HelloWorld/index.js",
+          "name": "./src/HelloWorld/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/HelloWorld/index.js (referenced with import())"
+      ],
+      "depth": 2
+    }
+  ],
+  "filteredModules": 0,
+  "children": [
+  ]
+}
